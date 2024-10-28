@@ -1,0 +1,83 @@
+
+from newCLS import ChooseInMenu
+class MenuOne(object):
+
+
+    def __init__(self,select:int|str,textInput:str='0',menu_list:list[str]=['1. overviewing tab', '2. something','3. something']):
+    
+        self._select = select
+        self._textInput = textInput
+        self._menu_list = menu_list
+
+@property 
+def menu(self):
+    print(f'{self._select} being accessed')
+    
+
+    @menu.setter
+    def menu (self,value:str):
+        print('f{self._select} being accessed')
+        
+
+
+
+
+
+def menu (self,menu_list:list[str])-> str:
+    showmenu:list[str] = [menu_list.upper() for menu_list in menu_list]
+    print(showmenu)
+    overViewTab:  ChooseInMenu= ChooseInMenu(textInput)
+    overViewTab
+    
+menu
+if (__name__ == '__main__'):
+    
+    
+  
+    selected: MenuOne = MenuOne('f{menu_list} {textInput} {showmenu}')
+    while textInput := input('type 1 to go to overview tab1, 2 to go to overview tab2, 3 to go to overview tab3, enter to exit: '):
+        if textInput == '1':
+            print('your in overview tab1')
+        elif textInput == '2':
+            print('your in overview tab2')
+        elif textInput == '3':
+            print('your in overview tab3')
+       
+    else:
+        print('exit')
+  
+   
+menu
+print(selected._menu_list)
+
+def inputPrompt(self):
+
+    selected._menu_list
+    print(selected._menu_list)
+    print(textInput)
+    if textInput == '1':
+        print(selected._menu_list)
+
+        print('your in overview tab1')
+    elif textInput == '2':
+        
+        print('your in overview tab2')
+    elif textInput == '3':
+        
+        print('your in overview tab3')
+
+inputPrompt(textInput)
+def go_to(_select:int):
+        print('go to {self._select}')
+        
+class S1electInMenu(MenuOne):
+   def __init__(self, select:int):
+    super().__init__(select)
+   
+    
+    select1: MenuOne = MenuOne(self._select)
+    
+    
+    
+    
+    select1.go_to('f{_select}')
