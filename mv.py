@@ -19,4 +19,5 @@ def copy_file(source_path, destination_path):
 # Example usage
 source_file = 'c:/path/to/source/file.txt'
 destination_file = 'c:/path/to/destination/file.txt'
+
 copy_file(source_file, destination_file)
