@@ -1,40 +1,20 @@
 
-from newCLS import ChooseInMenu
 from overview import Overview
+from newCLS import ChooseInMenu
 from time import perf_counter, sleep
-from functools import wraps
+
 from typing import Callable
 
 class MenuOne(object):
 
        
-    def __init__(self, select:int):
-        self.select = select
-    def repeat(times:int):
-    
-            def decorator(*args, **kwargs):
-                @wraps(func=[function])
-                def wrapper(*args, **kwargtimes ):
-                            
-                            
-                            
-                    
-                    def    timeswrapper(*args, **kwargs):
-        
-        
-                        value = None
-                        for _ in range(times):
-                            value = func=[function](*args, **kwargs)
-            
-                            return value
-                            return wapper
-            return decorator
-def __init__(self,select:int|str,textInput:str='0',menu_list:list[str]=['1. overviewing tab', '2. something','3. something']):
+    def __init__(self,select:int|str,textInput:str='0',menu_list:list[str]=['1. overviewing tab', '2. something','3. something']):
     
         
         self._select = select
         self._textInput = textInput
         self._menu_list = menu_list
+        
 
 @property 
 def menu(self):
@@ -50,89 +30,67 @@ def menu(self):
 
 
 
-def menu (self,menu_list:list[str])-> str:
-    showmenu:list[str] = [menu_list.upper() for menu_list in menu_list]
-    print(showmenu)
-    overViewTab:  ChooseInMenu= ChooseInMenu(selected)
-    overViewTab
-    
-    
-menu
-if (__name__ == '__main__'):
-    
-    
-  
-  
 
-    def repeat():
+if (__name__ == '__main__'):
+    inMenu : S1electInMenu = S1electInMenu()
+    inMenu.print_menu(['1. overviewing tab', '2. something','3. something'])
+  
+   
+    def jump_to_script():
+        while overviewtap_input := input('type to start script: '):
+                 if overviewtap_input == 'start':
+                                print("script_started")
+                                start:   Overview =  Overview.turn_on('start')
+                 else:
+                        print('exit')    
+
+  
+    def printMenu(self):
+        text = '0'
+        while textInput := input('type the number of the tab you want to go to: '):
+                text = textInput
+        
+         
+                if text == '1':
+                        print('your in overview tab1')
+                        overviewtap_input = input('wright start to continue with script: ')
+                        if overviewtap_input == 'start':
+                                print("script_started")
+                                
+                                jump_to_script()
+                        else:
+                            
+                                print('do nothing')
+                elif text == '2':
+                        print('your in overview tab2')
+                elif text == '3':
+                        print('your in overview tab3')
+                
+       
+                else:
+                        print('exit')
+  
+def repeat():
         def wrapper():
             return vars
         return 
         return times
         
-    selected: MenuOne = MenuOne('f{menu_list} {textInput} {showmenu}')
-    overview: Overview = Overview(0, 'overviewing tab')
+   # overview: Overview = Overview(0, 'overviewing tab')
 
-    def get_time(func):
-        """times any function"""
-    def wrapper(*args, **kwargs):
-      start_time: float = perf_counter
-      
-
-    func(*args,**kwargs)
-end_time:float = perf_counter(emd_time)
-total_time = round(end_time)
-print("the times" , total_time, 'seconds')
-
+    
 def do_something(param):
         
         sleep(1)
         print(param)  
-        repeat()  
+
         
-def printMenu():
-        
-        while textInput := input(    print(selected._menu_list)):
-        
-            match textInput:
-                case textInput: str == "start"
-            print("start script")
-            if textInput == '1':
-                        overview.descripe('overviewing tab')
-                        print('your in overview tab1')
-            elif textInput == '2':
-                        print('your in overview tab2')
-            elif textInput == '3':
-                        print('your in overview tab3')
-                
-       
-            else:
-                        print('exit')
-  
-   
-menu(self=list[str])
-printMenu()
+printMenu(['1. overviewing tab', '2. something','3. something'])
 
 
 print(selected._menu_list)
 
-def inputPrompt(self):
 
-    selected._menu_list
-    print(selected._menu_list)
-    print(textInput)
-    if textInput == '1':
-        print(selected._menu_list)
-
-        print('your in overview tab1')
-    elif textInput == '2':
-        
-        print('your in overview tab2')
-    elif textInput == '3':
-        
-        print('your in overview tab3')
-
-inputPrompt(textInput)
 def go_to(_select:int):
         print('go to {self._select}')
         
@@ -142,9 +100,7 @@ class S1electInMenu(MenuOne):
     super().__init__(select)
    
     
-    select1: MenuOne = MenuOne(self._select)
+    printMenu(['1. overviewing tab', '2. something','3. something'])    
     
     
     
-    
-    select1.go_to('f{_select}')

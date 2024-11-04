@@ -1,9 +1,17 @@
 from multiprocessing import Process, Lock,Semaphore
+import datetime
+import winsound
+from time import sleep
+import psutil
+
 
 class Overview:
-    def __init__(self, model, describe):
+    def __init__(self, model, describe,fire_alarm=datetime.datetime.now(),alarm_hour=int(input("Set hour: "))):
         self.model = model
         self.describe = describe
+        self.fire_alarm = fire_alarm
+        self.alarm_hour = alarm_hour
+        
    
    
 if "__name__" == "__main__":
@@ -31,9 +39,33 @@ def descripe(self):
         print(f'describe server status {self.model} ({self.describe})')
 
 def turn_on(self):
+    self.alarm_fire 
+    alarm_hour
+    self.am_pm = input("am or pm? ")
+
+    print(f"Waiting for {am_pm}")
+
+while True:
+        current_time = datetime.datetime.now().strftime("%H:%M")
+
+      
        
-        print( 'script started')
-        if self == 'start':
+
+        frequency = str(psutil.cpu_freq().current) + " MHz"
+        print(f"CPU Frequency: {frequency}")
+
+        with open("copy1.txt", "w") as alarms:
+            alarms.write(f'alarm went off at:  {current_time}')
+
+else:
+    cpu_usage = psutil.cpu_percent(interval=1)
+if cpu_usage > alarm_hour:
+        print('cpu has high strain on it')
+else:
+            print(cpu_usage)
+
+            print( 'script started')
+if self == 'start':
             print('start scipt')
 def turn_off(self):
         print('script stop')
